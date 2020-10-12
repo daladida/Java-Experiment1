@@ -9,12 +9,12 @@ Java课程作业项目仓库
 ## 实验方法
    CPU类有getSpeed()返回speed的值，setSpeed(int m)方法将参数m的值赋值给speed;HardDisk类中getAmount()返回amount的值，setAmount(int m)方法将参数m的值赋值给amount;PC类中setCPU(CPU c)将参数c的值赋值给cpu，setHardDisk(HardDisk h)方法将参数h的值赋值给HD，show()方法能显示cpu的速度和硬盘容量。
    在主Test类中
-   (1、main方法中创建一个CPU对象cpu，cpu将speed设置为2200
-   (2、main方法中创建一个HardDisk对象disk，disk将amount设置为200
-   (3、main方法中创建一个PC对象pc
-   (4、pc调用setCPU(CPU c)方法，调用时实参是cpu
-   (5、pc调用setHardDisk(HardDisk h)方法，调用时实参是disk
-   (6、pc调用show()方法
+   (1、main方法中创建一个CPU对象cpu，cpu将speed设置为2200  
+   (2、main方法中创建一个HardDisk对象disk，disk将amount设置为200  
+   (3、main方法中创建一个PC对象pc  
+   (4、pc调用setCPU(CPU c)方法，调用时实参是cpu  
+   (5、pc调用setHardDisk(HardDisk h)方法，调用时实参是disk  
+   (6、pc调用show()方法  
    
 ## 核心方法
   首先在src下新建CPU、HD、PC三个包，并分别在其下建立CPU、HardDisk、PC、Test四个类；
