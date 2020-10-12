@@ -28,40 +28,40 @@ Java课程作业项目仓库
 ## 核心代码
 ### CPU类
     public static char type = 'i';public static String brand;//使用静态变量type，类型为字符型
-	 private int speed;//速度属性(整型)，访问权限修饰符为“私有”
-	 protected double cache;//容量属性(双浮点型)，访问权限修饰符为“保护”
+    private int speed;//速度属性(整型)，访问权限修饰符为“私有”
+    protected double cache;//容量属性(双浮点型)，访问权限修饰符为“保护”
     public double CPU() {
-	   return cache;}//不含参构造方法
-	 public void CPU(double cache) {
-		this.cache = cache;}//含参构造方法
+    return cache;}//不含参构造方法
+    public void CPU(double cache) {
+    this.cache = cache;}//含参构造方法
 ### HardDisk类
     private int amount;//容量属性(整型)，访问权限修饰符为“私有”
-	 protected float rpm;//速度属性(单浮点型)，访问权限修饰符为“保护”
+    protected float rpm;//速度属性(单浮点型)，访问权限修饰符为“保护”
     public float HardDisk() {
-		return rpm;}//不含参构造方法
-	 public void HardDisk(float rpm) {
-	   this.rpm = rpm;}//含参构造方法
+    return rpm;}//不含参构造方法
+    public void HardDisk(float rpm) {
+    this.rpm = rpm;}//含参构造方法
 ### PC类
       String brand;//品牌属性(字符串型)
-	   CPU cpu;
-	   HardDisk HD;
-	   void setCPU(CPU cpu) {
-	   this.cpu = cpu;}
-	   void setHardDisk(HardDisk HD) {
-	   this.HD = HD;}
+      CPU cpu;
+      HardDisk HD;
+      void setCPU(CPU cpu) {
+      this.cpu = cpu;}
+      void setHardDisk(HardDisk HD) {
+      this.HD = HD;}
 ### Test类
       CPU cpu = new CPU();//创建CPU对象cpu
-		HardDisk disk=new HardDisk();//创建HardDisk对象disk
-		cpu.setSpeed(2200);//cpu设定自己speed设定为2200
-		cpu.CPU(256);
-		disk.setAmount(200);//disk将自己amount设定为200
-		disk.HardDisk(5400);
-		PC pc =new PC();//创建PC对象pc
-		pc.setCPU(cpu);//pc调用方法，实参是cpu
-		pc.setHardDisk(disk);//pc调用方法，实参是disk
-		pc.brand = "DELL-WXJ";
-		CPU.brand = "Intel(R)";
-		pc.show();//pc调用show()方法
+      HardDisk disk=new HardDisk();//创建HardDisk对象disk
+      cpu.setSpeed(2200);//cpu设定自己speed设定为2200
+      cpu.CPU(256);
+      disk.setAmount(200);//disk将自己amount设定为200
+      disk.HardDisk(5400);
+      PC pc =new PC();//创建PC对象pc
+      pc.setCPU(cpu);//pc调用方法，实参是cpu
+      pc.setHardDisk(disk);//pc调用方法，实参是disk
+      pc.brand = "DELL-WXJ";
+      CPU.brand = "Intel(R)";
+      pc.show();//pc调用show()方法
 ## 实验结果
 PC品牌:DELL-WXJ  
 Intel(R)i5-6200U  
