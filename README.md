@@ -25,6 +25,43 @@ Java课程作业项目仓库
   <6>当然，在PC类下也使用了String字符串型定义了brand属性给出了PC与CPU的品牌；  
   <7>同时还创新性的使用了静态数据——public static char type = 'i';  
 
+## 核心代码
+### CPU类
+    public static char type = 'i';public static String brand;//使用静态变量type，类型为字符型
+	 private int speed;//速度属性(整型)，访问权限修饰符为“私有”
+	 protected double cache;//容量属性(双浮点型)，访问权限修饰符为“保护”
+    public double CPU() {
+	   return cache;}//不含参构造方法
+	 public void CPU(double cache) {
+		this.cache = cache;}//含参构造方法
+### HardDisk类
+    private int amount;//容量属性(整型)，访问权限修饰符为“私有”
+	 protected float rpm;//速度属性(单浮点型)，访问权限修饰符为“保护”
+    public float HardDisk() {
+		return rpm;}//不含参构造方法
+	 public void HardDisk(float rpm) {
+	   this.rpm = rpm;}//含参构造方法
+### PC类
+      String brand;//品牌属性(字符串型)
+	   CPU cpu;
+	   HardDisk HD;
+	   void setCPU(CPU cpu) {
+	   this.cpu = cpu;}
+	   void setHardDisk(HardDisk HD) {
+	   this.HD = HD;}
+### Test类
+      CPU cpu = new CPU();//创建CPU对象cpu
+		HardDisk disk=new HardDisk();//创建HardDisk对象disk
+		cpu.setSpeed(2200);//cpu设定自己speed设定为2200
+		cpu.CPU(256);
+		disk.setAmount(200);//disk将自己amount设定为200
+		disk.HardDisk(5400);
+		PC pc =new PC();//创建PC对象pc
+		pc.setCPU(cpu);//pc调用方法，实参是cpu
+		pc.setHardDisk(disk);//pc调用方法，实参是disk
+		pc.brand = "DELL-WXJ";
+		CPU.brand = "Intel(R)";
+		pc.show();//pc调用show()方法
 ## 实验结果
 PC品牌:DELL-WXJ  
 Intel(R)i5-6200U  
@@ -34,12 +71,12 @@ HDD容量:200GB
 HDD转速:5400.0rpm  
 
 ## 实验感想
-     Java对于我们来说是一门陌生的学科，但它是目前业界应用最广泛，使用人数最多的语言，连续多年排名世界第一，。刚开始学的时候有一种恐惧感，因为它是陌生的，虽然只是有学过python C++，但那些只学了皮毛，感觉对代码的编写还是有点不太擅长。
-     第一节课我了解到了Java的发展史和一些基本的知识，后续课程逐步深入学习，尤其是自己动手编写之后，就从中感觉到了许多乐趣，刚开始感觉这个很难，以为它像C++一样难，而且还都是英文，对于我这种英语差的来说简直就是噩梦，但经过一段时间的学习后感觉其实并没有想象的那么可怕，感觉很好玩，它不像C++一样，报错都是最后显示，还得回去找，Java有错直接能显示非常的方便。
-     我觉得学好这门课需要做到以下几：
-     1.多运用编译器编写、调试程序。
-     2.对于不懂得的代码，要尽量搞清楚问题出在哪。
-     3.与同学课下多多交流，课上多请教老师。
+   Java对于我们来说是一门陌生的学科，但它是目前业界应用最广泛，使用人数最多的语言，连续多年排名世界第一，。刚开始学的时候有一种恐惧感，因为它是陌生的，虽然只是有学过python C++，但那些只学了皮毛，感觉对代码的编写还是有点不太擅长。  
+   第一节课我了解到了Java的发展史和一些基本的知识，后续课程逐步深入学习，尤其是自己动手编写之后，就从中感觉到了许多乐趣，刚开始感觉这个很难，以为它像C++一样难，而且还都是英文，对于我这种英语差的来说简直就是噩梦，但经过一段时间的学习后感觉其实并没有想象的那么可怕，感觉很好玩，它不像C++一样，报错都是最后显示，还得回去找，Java有错直接能显示非常的方便。  
+   我觉得学好这门课需要做到以下几：  
+   1.多运用编译器编写、调试程序。  
+   2.对于不懂得的代码，要尽量搞清楚问题出在哪。  
+   3.与同学课下多多交流，课上多请教老师。  
 
 
 
