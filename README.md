@@ -17,13 +17,13 @@ Java课程作业项目仓库
    (6、pc调用show()方法  
    
 ## 核心方法
-  首先在src下新建CPU、HD、PC三个包，并分别在其下建立CPU、HardDisk、PC、Test四个类；
-  还使用了import关键字，将CPU与HD两包下的CPU与HardDisk两类进行并入到PC类与Test类下进行访问；
-  在类下分别使用两种构造方法(重载)，比如CPU类下的public double CPU()与public void CPU(double cache)；
-  分别在CPU与HardDisk类下添加cache，rpm两个另外属性，其类型分别是double与float，并为其添加private与protected修饰符，进行权限限制访问，使得private成员只能通过被调用相关public方法来实现   不同包与不同类下的访问；
-  通过调用构造方法将属性输出，如public double CPU(){return cache}，最后通过pc.show()方法输出；
-  当然，在PC类下也使用了String字符串型定义了brand属性给出了PC与CPU的品牌；
-  同时还创新性的使用了静态数据——public static char type = 'i';
+  <1>首先在src下新建CPU、HD、PC三个包，并分别在其下建立CPU、HardDisk、PC、Test四个类；  
+  <2>还使用了import关键字，将CPU与HD两包下的CPU与HardDisk两类进行并入到PC类与Test类下进行访问；  
+  <3>在类下分别使用两种构造方法(重载)，比如CPU类下的public double CPU()与public void CPU(double cache)；  
+  <4>分别在CPU与HardDisk类下添加cache，rpm两个另外属性，其类型分别是double与float，并为其添加private与protected修饰符，进行权限限制访问，使得private成员只能通过被调用相关public方法来实现   不同包与不同类下的访问；  
+  <5>通过调用构造方法将属性输出，如public double CPU(){return cache}，最后通过pc.show()方法输出；  
+  <6>当然，在PC类下也使用了String字符串型定义了brand属性给出了PC与CPU的品牌；  
+  <7>同时还创新性的使用了静态数据——public static char type = 'i';  
 
 ## 实验结果
 PC品牌:DELL-WXJ  
