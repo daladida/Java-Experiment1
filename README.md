@@ -8,7 +8,7 @@ Java课程作业项目仓库
 
 ## 实验方法
    CPU类有getSpeed()返回speed的值，setSpeed(int m)方法将参数m的值赋值给speed;HardDisk类中getAmount()返回amount的值，setAmount(int m)方法将参数m的值赋值给amount;PC类中setCPU(CPU c)将参数c的值赋值给cpu，setHardDisk(HardDisk h)方法将参数h的值赋值给HD，show()方法能显示cpu的速度和硬盘容量。
-   在主Test类中
+   在主Test类中  
    (1、main方法中创建一个CPU对象cpu，cpu将speed设置为2200  
    (2、main方法中创建一个HardDisk对象disk，disk将amount设置为200  
    (3、main方法中创建一个PC对象pc  
@@ -26,12 +26,12 @@ Java课程作业项目仓库
   同时还创新性的使用了静态数据——public static char type = 'i';
 
 ## 实验结果
-PC品牌:DELL-WXJ
-Intel(R)i5-6200U
-CPU主频:2200Hz
-CPU缓存:256.0MB
-HDD容量:200GB
-HDD转速:5400.0rpm
+PC品牌:DELL-WXJ  
+Intel(R)i5-6200U  
+CPU主频:2200Hz  
+CPU缓存:256.0MB  
+HDD容量:200GB  
+HDD转速:5400.0rpm  
 
 ## 实验感想
      Java对于我们来说是一门陌生的学科，但它是目前业界应用最广泛，使用人数最多的语言，连续多年排名世界第一，。刚开始学的时候有一种恐惧感，因为它是陌生的，虽然只是有学过python C++，但那些只学了皮毛，感觉对代码的编写还是有点不太擅长。
