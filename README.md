@@ -35,20 +35,24 @@ public void CPU(double cache) {
 this.cache = cache;}//含参构造方法
 ```
 ### HardDisk类
-    private int amount;//容量属性(整型)，访问权限修饰符为“私有”
-    protected float rpm;//速度属性(单浮点型)，访问权限修饰符为“保护”
-    public float HardDisk() {
-    return rpm;}//不含参构造方法
-    public void HardDisk(float rpm) {
-    this.rpm = rpm;}//含参构造方法
+```js
+private int amount;//容量属性(整型)，访问权限修饰符为“私有”
+protected float rpm;//速度属性(单浮点型)，访问权限修饰符为“保护”
+public float HardDisk() {
+return rpm;}//不含参构造方法
+public void HardDisk(float rpm) {
+this.rpm = rpm;}//含参构造方法
+```
 ### PC类
-      String brand;//品牌属性(字符串型)
-      CPU cpu;
-      HardDisk HD;
-      void setCPU(CPU cpu) {
-      this.cpu = cpu;}
-      void setHardDisk(HardDisk HD) {
-      this.HD = HD;}
+```javascript
+String brand;//品牌属性(字符串型)
+CPU cpu;
+HardDisk HD;
+void setCPU(CPU cpu) {
+this.cpu = cpu;}
+void setHardDisk(HardDisk HD) {
+this.HD = HD;}
+```
 ### Test类
       CPU cpu = new CPU();//创建CPU对象cpu
       HardDisk disk=new HardDisk();//创建HardDisk对象disk
