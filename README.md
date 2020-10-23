@@ -63,12 +63,7 @@ Java课程作业项目仓库
       CPU.brand = "Intel(R)";
       pc.show();//pc调用show()方法
 ## 实验结果
-PC品牌:DELL-WXJ  
-Intel(R)i5-6200U  
-CPU主频:2200Hz  
-CPU缓存:256.0MB  
-HDD容量:200GB  
-HDD转速:5400.0rpm  
+![image](https://github.com/daladida/Java-Experiment1/blob/main/images/%E5%AE%9E%E7%8E%B0%EF%BC%88%E4%B8%80%EF%BC%89%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.png)
 
 ## 实验感想
    一、Java对于我们来说是一门陌生的学科，但它是目前业界应用最广泛，使用人数最多的语言，连续多年排名世界第一，。刚开始学的时候有一种恐惧感，因为它是陌生的，虽然只是有学过python C++，但那些只学了皮毛，感觉对代码的编写还是有点不太擅长。  
