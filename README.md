@@ -25,7 +25,7 @@ Java课程作业项目仓库
 
 ## 核心代码
 ### CPU类
-```java
+```javascript
 public static char type = 'i';public static String brand;//使用静态变量type，类型为字符型
 private int speed;//速度属性(整型)，访问权限修饰符为“私有”
 protected double cache;//容量属性(双浮点型)，访问权限修饰符为“保护”
@@ -35,7 +35,7 @@ public void CPU(double cache) {
 this.cache = cache;}//含参构造方法
 ```
 ### HardDisk类
-```js
+```javascript
 private int amount;//容量属性(整型)，访问权限修饰符为“私有”
 protected float rpm;//速度属性(单浮点型)，访问权限修饰符为“保护”
 public float HardDisk() {
@@ -54,7 +54,7 @@ void setHardDisk(HardDisk HD) {
 this.HD = HD;}
 ```
 ### Test类
-```python
+```javascript
 CPU cpu = new CPU();//创建CPU对象cpu
 HardDisk disk=new HardDisk();//创建HardDisk对象disk
 cpu.setSpeed(2200);//cpu设定自己speed设定为2200
@@ -76,7 +76,7 @@ pc.show();//pc调用show()方法
    *  在PC模拟机程序实验中让我对前一阶段所学的知识有了一定的具体认识，光听课感觉概念都太过于抽象，亲手编写出来以后就化抽象为具体了。首先彻底的理解了类和对象的定义和使用，对象是具体的事物：类是对对象的抽象。类可以看成一类对象的模板，对象可以看成该类的一个具体实例，掌握了用类创建对象的方法，利用类中定义的构造方法来创建对象。还用到了重载构造方法，并且尝试把这次实验的多个类放置在不同的包中，体会到了修饰符private的用法，还用this,private关键字进行了封装。  
    *  之前在查看代码的时候进入过Github，但没有自己使用过，通过查看老师的详细图片讲解，学会了把代码上传，并借助互联网解决了README的格式调节，又掌握了一项新的技能，以后不仅是Java代码其他学科也可以保存于此，方便日后查看。   
    *  第一节课我了解到了Java的发展史和一些基本的知识和环境的搭建使用等，后续课程逐步深入学习，尤其是自己动手编写之后，就从中感觉到了许多乐趣，刚开始感觉这个很难，以为它像C++一样难，而且还都是英文，对于我这种英语差的来说简直就是噩梦，但经过一段时间的学习后感觉其实并没有想象的那么可怕，感觉很好玩，它不像C++一样，报错都是最后显示，还得回去找，Java有错直接能显示非常的方便。  
-   我觉得学好这门课需要做到以下几：  
+   我觉得学好这门课需要做到以下几点：  
       *  多运用编译器编写、调试程序。  
       *  对于不懂得的代码，要尽量搞清楚问题出在哪。  
       *  与同学课下多多交流，课上多请教老师。  
