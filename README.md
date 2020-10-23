@@ -28,11 +28,12 @@ Java课程作业项目仓库
 ```java
 public static char type = 'i';public static String brand;//使用静态变量type，类型为字符型
 private int speed;//速度属性(整型)，访问权限修饰符为“私有”
-    protected double cache;//容量属性(双浮点型)，访问权限修饰符为“保护”
-    public double CPU() {
-    return cache;}//不含参构造方法
-    public void CPU(double cache) {
-    this.cache = cache;}//含参构造方法```
+protected double cache;//容量属性(双浮点型)，访问权限修饰符为“保护”
+public double CPU() {
+return cache;}//不含参构造方法
+public void CPU(double cache) {
+this.cache = cache;}//含参构造方法
+```
 ### HardDisk类
     private int amount;//容量属性(整型)，访问权限修饰符为“私有”
     protected float rpm;//速度属性(单浮点型)，访问权限修饰符为“保护”
