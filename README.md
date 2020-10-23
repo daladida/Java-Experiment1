@@ -6,13 +6,13 @@ Java课程作业项目仓库
 
 ## 实验方法
    CPU类有getSpeed()返回speed的值，setSpeed(int m)方法将参数m的值赋值给speed;HardDisk类中getAmount()返回amount的值，setAmount(int m)方法将参数m的值赋值给amount;PC类中setCPU(CPU c)将参数c的值赋值给cpu，setHardDisk(HardDisk h)方法将参数h的值赋值给HD，show()方法能显示cpu的速度和硬盘容量。
-   在主Test类中  
-   >main方法中创建一个CPU对象cpu，cpu将speed设置为2200  
-   >main方法中创建一个HardDisk对象disk，disk将amount设置为200  
-   >main方法中创建一个PC对象pc  
-   >pc调用setCPU(CPU c)方法，调用时实参是cpu  
-   >pc调用setHardDisk(HardDisk h)方法，调用时实参是disk  
-   >pc调用show()方法  
+   >在主Test类中  
+   >>main方法中创建一个CPU对象cpu，cpu将speed设置为2200  
+   >>main方法中创建一个HardDisk对象disk，disk将amount设置为200  
+   >>main方法中创建一个PC对象pc  
+   >>pc调用setCPU(CPU c)方法，调用时实参是cpu  
+   >>pc调用setHardDisk(HardDisk h)方法，调用时实参是disk  
+   >>pc调用show()方法  
    
 ## 核心方法
   *  首先在src下新建CPU、HD、PC三个包，并分别在其下建立CPU、HardDisk、PC、Test四个类；  
@@ -25,15 +25,15 @@ Java课程作业项目仓库
 
 ## 核心代码
 ### CPU类
-    >public static char type = 'i';public static String brand;//使用静态变量type，类型为字符型
-    >private int speed;//速度属性(整型)，访问权限修饰符为“私有”
-    >protected double cache;//容量属性(双浮点型)，访问权限修饰符为“保护”
-    >public double CPU() {
-    >return cache;}//不含参构造方法
-    >public void CPU(double cache) {
-    >this.cache = cache;}//含参构造方法
+    public static char type = 'i';public static String brand;//使用静态变量type，类型为字符型
+    private int speed;//速度属性(整型)，访问权限修饰符为“私有”
+    protected double cache;//容量属性(双浮点型)，访问权限修饰符为“保护”
+    public double CPU() {
+    return cache;}//不含参构造方法
+    public void CPU(double cache) {
+    this.cache = cache;}//含参构造方法
 ### HardDisk类
-    private int amount;//容量属性(整型)，访问权限修饰符为“私有”
+    `private int amount;`//容量属性(整型)，访问权限修饰符为“私有”
     protected float rpm;//速度属性(单浮点型)，访问权限修饰符为“保护”
     public float HardDisk() {
     return rpm;}//不含参构造方法
