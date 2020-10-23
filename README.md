@@ -54,18 +54,20 @@ void setHardDisk(HardDisk HD) {
 this.HD = HD;}
 ```
 ### Test类
-      CPU cpu = new CPU();//创建CPU对象cpu
-      HardDisk disk=new HardDisk();//创建HardDisk对象disk
-      cpu.setSpeed(2200);//cpu设定自己speed设定为2200
-      cpu.CPU(256);
-      disk.setAmount(200);//disk将自己amount设定为200
-      disk.HardDisk(5400);
-      PC pc =new PC();//创建PC对象pc
-      pc.setCPU(cpu);//pc调用方法，实参是cpu
-      pc.setHardDisk(disk);//pc调用方法，实参是disk
-      pc.brand = "DELL-WXJ";
-      CPU.brand = "Intel(R)";
-      pc.show();//pc调用show()方法
+```python
+CPU cpu = new CPU();//创建CPU对象cpu
+HardDisk disk=new HardDisk();//创建HardDisk对象disk
+cpu.setSpeed(2200);//cpu设定自己speed设定为2200
+cpu.CPU(256);
+disk.setAmount(200);//disk将自己amount设定为200
+disk.HardDisk(5400);
+PC pc =new PC();//创建PC对象pc
+pc.setCPU(cpu);//pc调用方法，实参是cpu
+pc.setHardDisk(disk);//pc调用方法，实参是disk
+pc.brand = "DELL-WXJ";
+CPU.brand = "Intel(R)";
+pc.show();//pc调用show()方法
+```
 ## 实验结果
 ![image](https://github.com/daladida/Java-Experiment1/blob/main/images/%E5%AE%9E%E7%8E%B0%EF%BC%88%E4%B8%80%EF%BC%89%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.png)
 
