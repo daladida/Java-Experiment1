@@ -1,13 +1,13 @@
 # Java-Experiment1
-Java课程作业项目仓库
+**Java课程作业项目仓库**
 
 ## 实验内容
    `用类描述计算机中CPU的速度和硬盘的容量，并且在Java应用程序中添加4个类，名字分别是PC、CPU、HardDisk和Test,其中Text是主类。类中还需要定义不少于两个构造方法；每个类定义不少于2个属性，且属性的类型多样化。根据课堂中关于访问权限的内容，定义属性的修饰符多样化，类中定义方法操作属性，避免直接通过“类对象.属性”的形式访问属性值；且定义的方法内应该有符合常理的逻辑判断。把本次实验的多个类放置在不同的包中，体会修饰符private的用法。`
 
 ## 实验方法
-   *CPU类有getSpeed()返回speed的值，setSpeed(int m)方法将参数m的值赋值给speed;*  
-   *HardDisk类中getAmount()返回amount的值，setAmount(int m)方法将参数m的值赋值给amount;*  
-   *PC类中setCPU(CPU c)将参数c的值赋值给cpu，setHardDisk(HardDisk h)方法将参数h的值赋值给HD，show()方法能显示cpu的速度和硬盘容量。*  
+   ***CPU类有getSpeed()返回speed的值，setSpeed(int m)方法将参数m的值赋值给speed; 
+   HardDisk类中getAmount()返回amount的值，setAmount(int m)方法将参数m的值赋值给amount;  
+   PC类中setCPU(CPU c)将参数c的值赋值给cpu，setHardDisk(HardDisk h)方法将参数h的值赋值给HD，show()方法能显示cpu的速度和硬盘容量。***  
    >在主Test类中  
    >>main方法中创建一个CPU对象cpu，cpu将speed设置为2200  
    >>main方法中创建一个HardDisk对象disk，disk将amount设置为200  
@@ -19,7 +19,7 @@ Java课程作业项目仓库
 ## 核心方法
   *  首先在src下新建CPU、HD、PC三个包，并分别在其下建立CPU、HardDisk、PC、Test四个类；  
   *  还使用了import关键字，将CPU与HD两包下的CPU与HardDisk两类进行并入到PC类与Test类下进行访问；  
-  *  在类下分别使用两种构造方法(重载)，比如CPU类下的public double CPU()与public void CPU(double cache)；  
+  *  在类下分别使用两种构造方法(*重载*)，比如CPU类下的public double CPU()与public void CPU(double cache)；  
   *  分别在CPU与HardDisk类下添加cache，rpm两个另外属性，其类型分别是double与float，并为其添加private与protected修饰符，进行权限限制访问，使得private成员只能通过被调用相关public方法来实现   不同包与不同类下的访问；  
   *  通过调用构造方法将属性输出，如public double CPU(){return cache}，最后通过pc.show()方法输出；  
   *  当然，在PC类下也使用了String字符串型定义了brand属性给出了PC与CPU的品牌；  
